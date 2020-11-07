@@ -1,0 +1,19 @@
+<div class="alert" [ngClass]="newAlert" role="alert">
+  A simple success alert—check it out!
+</div>
+
+<button class="btn btn-info mr-3" (click)="newAlert = 'alert-info'">Info</button>
+<button class="btn btn-danger mr-3" (click)="newAlert = 'alert-danger'">Danger</button>
+<button class="btn btn-success" (click)="newAlert = 'alert-success'">Success</button>
+
+<h3 class="mt-3" [ngClass]="{'text-danger':properties.danger, 'text-info': !properties.danger}">Hello World</h3>
+
+<button class="btn btn-secondary" (click)="properties.danger = !properties.danger">Change</button>
+
+<hr class="mt-5">
+<h3>Proceso asíncrono</h3>
+<button (click)="execute()" class="btn btn-primary" [disabled]="loading">
+  <i [ngClass]="{'fa-save': !loading, 'fa-refresh fa-spin': loading}" class="fa fa-refresh fa-spin"></i>
+  <span *ngIf="!loading"> Save</span>
+  <span *ngIf="loading"> Waiting</span>
+</button>
