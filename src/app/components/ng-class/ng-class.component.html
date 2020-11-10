@@ -11,7 +11,7 @@
 <button class="btn btn-secondary" (click)="properties.danger = !properties.danger">Change</button>
 
 <hr class="mt-5">
-<h3>Proceso asíncrono</h3>
+<h3>Asynchronous process</h3>
 <button (click)="execute()" class="btn btn-primary" [disabled]="loading">
   <i [ngClass]="{'fa-save': !loading, 'fa-refresh fa-spin': loading}" class="fa fa-refresh fa-spin"></i>
   <span *ngIf="!loading"> Save</span>

@@ -1,0 +1,16 @@
+<h3>ng-switch</h3>
+<span [ngSwitch]="alert">
+  <p *ngSwitchCase="'success'">Success</p>
+  <p *ngSwitchCase="'info'">Info</p>
+  <p *ngSwitchCase="'warning'">Warning</p>
+  <p *ngSwitchDefault>Danger</p>
+</span>
+
+<button class="btn btn-secondary mb-2" (click)="alert='success'">Change</button>
+
+<div [ngSwitch]="alert">
+  <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+  <div *ngSwitchCase="'info'" class="alert alert-info" role="alert">A simple info alert—check it out!</div>
+  <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+  <div *ngSwitchDefault class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
+</div>
