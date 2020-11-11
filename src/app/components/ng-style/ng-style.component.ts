@@ -7,8 +7,4 @@ import { Component } from '@angular/core'
 })
 export class NgStyleComponent {
   size = 30
-
-  constructor() {
-    console.log('Hola')
-  }
 }

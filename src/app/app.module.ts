@@ -11,6 +11,11 @@ import { HomeComponent } from './components/home/home.component'
 
 // import { AppRouting } from './app.routes'
 import { AppRouting } from './app.routes'
+import { UserComponent } from './components/user/user.component';
+import { NewUserComponent } from './components/user/new-user.component';
+import { EditUserComponent } from './components/user/edit-user.component';
+import { DetailUserComponent } from './components/user/detail-user.component';
+import { NavbarComponent } from './components/navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { AppRouting } from './app.routes'
     NgClassComponent,
     HighlightDirective,
     NgSwitchComponent,
-    HomeComponent
+    HomeComponent,
+    UserComponent,
+    NewUserComponent,
+    EditUserComponent,
+    DetailUserComponent,
+    NavbarComponent
   ],
   imports: [BrowserModule, AppRouting],
   providers: [],

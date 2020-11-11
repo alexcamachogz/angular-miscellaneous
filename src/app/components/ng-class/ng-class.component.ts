@@ -11,9 +11,6 @@ export class NgClassComponent {
   properties = {
     danger: false
   }
-  constructor() {
-    console.log('Hola')
-  }
 
   execute(): string {
     this.loading = true

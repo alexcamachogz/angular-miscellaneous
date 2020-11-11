@@ -5,8 +5,4 @@ import { Component } from '@angular/core'
   template: ` <p>Working with CSS!</p> `,
   styleUrls: ['./css.component.styl']
 })
-export class CssComponent {
-  constructor() {
-    console.log('Hola')
-  }
-}
+export class CssComponent {}

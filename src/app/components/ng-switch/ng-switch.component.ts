@@ -9,6 +9,5 @@ export class NgSwitchComponent {
   alert: string
   constructor() {
     this.alert = 'warning'
-    console.log('ng-switch')
   }
 }
